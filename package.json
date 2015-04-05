@@ -1,10 +1,14 @@
 {
-  "name": "Starter-Kit",
-  "version": "1.0.0",
+  "name": "grunt-starter-kit",
+  "version": "0.0.1",
   "author": "Andreas Farah",
   "homepage": "http://secondnetwork.de",
   "engines": {
     "node": ">= 0.12.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@bitbucket.org:secondnetwork/grunt-starter-kit.git"
   },
   "devDependencies": {
     "flightplan": "^0.6.1",
