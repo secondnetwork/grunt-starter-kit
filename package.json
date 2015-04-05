@@ -1,0 +1,22 @@
+{
+  "name": "Starter-Kit",
+  "version": "1.0.0",
+  "author": "Andreas Farah",
+  "homepage": "http://secondnetwork.de",
+  "engines": {
+    "node": ">= 0.12.0"
+  },
+  "devDependencies": {
+    "flightplan": "^0.6.1",
+    "grunt": "^0.4.5",
+    "request": "~2.51.0",
+    "time-grunt": "~1.0.0",
+    "load-grunt-tasks": "~2.0.0",
+    "grunt-contrib-sass": "latest",
+    "grunt-browser-sync": "latest",
+    "grunt-contrib-concat": "latest",
+    "grunt-contrib-uglify": "^0.8.0",
+    "grunt-contrib-watch": "latest",
+    "grunt-imageoptim": "latest"
+  }
+}
