@@ -18,7 +18,7 @@ module.exports = function(grunt) {
 		pkg: grunt.file.readJSON('package.json'),
         browserSync: {
             bsFiles: {
-                src : ['./build/*.html','./build/css/*.css']
+                src : ['./build/*.html','./build/css/**/*.css']
             },
             options: {
                 watchTask: true,
@@ -37,20 +37,20 @@ module.exports = function(grunt) {
         uglify: {
 			js: {
 				src: ['build/js/scripts.js'],
-                dest: wordthemeroot+'js/scripts.min.js',
+                dest: 'build/js/scripts.min.js',
 			}
 		},
         sass: {         
             dist: {
                  options: {            
-                  style: 'compressed'
+                  style: 'compressed'// Can be nested, compact, compressed, expanded.
                 },
                 files: [
                   {
-                      expand: true, // Recursive Output style. Can be nested, compact, compressed, expanded.
+                      expand: true, // Recursive Output style. 
                       cwd: "assets/sass/", // The startup directory
                       src: ["**/*.scss"], // Source files
-                      dest: wordthemeroot, // Destination
+                      dest: "build/css/", // Destination
                       ext: ".css" // File extension 
                   }
                 ]
