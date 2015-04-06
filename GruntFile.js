@@ -1,5 +1,5 @@
 var request = require('request');
-var wordthemeroot = '../wordpress_dev/wp-content/themes/Themename/';
+
 module.exports = function(grunt) {
     
     grunt.loadNpmTasks('grunt-browser-sync');
@@ -17,25 +17,14 @@ module.exports = function(grunt) {
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
         browserSync: {
-                dev: {
-                    
-                    options: {
-                        proxy: 'localhost:8888/wordpress_dev', //our PHP server
-                        files: [wordthemeroot+'style.css',
-                                wordthemeroot+'newOrbit.css',
-                                wordthemeroot+'js/**/*.js',
-                                wordthemeroot+'**/*.php'],
-                        //port: 8888, // our new port
-                        watchTask: true,
-                        debugInfo: true,
-                        //logConnections: true,
-                        notify: true,
-                        logFileChanges: true
-
-                        //server: {baseDir: "./build"}
-
-
-                } 
+            bsFiles: {
+                src : ['./build/*.html','./build/css/*.css']
+            },
+            options: {
+                watchTask: true,
+                server: {
+                    baseDir: "./build"
+                }
             }
         },
         
@@ -69,7 +58,7 @@ module.exports = function(grunt) {
         },
         imageoptim: {
               myTask: {
-                  src: ['public/assets/site', 'public/assets/images']
+                  src: ['assets/images', 'build/images']
               }
         },
 		watch: {
