@@ -5,9 +5,9 @@ A tutorial series ist coming soon. Only German language on Vimeo and YouTube.
 
 Ein Tutorial-Serie kommt in Kürze. Nur deutscher Sprache auf Vimeo und YouTube.
 
-**GRUNT + SASS + BrowserSync + Flightplan**
+**GRUNT + SASS + BrowserSync + bootstrap**
 
-* 0.0.1 Version
+* 0.0.2 Version
 
 
 #### Node NPM Packages
@@ -20,15 +20,18 @@ Ein Tutorial-Serie kommt in Kürze. Nur deutscher Sprache auf Vimeo und YouTube.
 * grunt-contrib-sass
 * grunt-contrib-watch
 * grunt-imageoptim
-* Flightplan
 
 
 ### Install
 It's preferred to have grunt command line tools installed globally, see above for information on this. 
+
 Clone this repo with `git clone https://bitbucket.org/secondnetwork/grunt-starter-kit.git` 
+
 and run `sudo npm install` in the directory. 
 
 
 #### Grunt
 
-See the `gruntfile.js` file for more information on standard grunt tasks. Run `grunt` via terminal to run all tasks.
+See the `gruntfile.js` file for more information on standard grunt tasks. 
+
+Run `grunt` via terminal to run all tasks.

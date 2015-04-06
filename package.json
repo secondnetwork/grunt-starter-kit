@@ -11,7 +11,6 @@
     "url": "git@bitbucket.org:secondnetwork/grunt-starter-kit.git"
   },
   "devDependencies": {
-    "flightplan": "^0.6.1",
     "grunt": "^0.4.5",
     "request": "~2.51.0",
     "time-grunt": "~1.0.0",
