@@ -13,7 +13,7 @@ Ein Tutorial-Serie kommt in Kürze. Nur deutscher Sprache auf Vimeo und YouTube.
 #### Node NPM Packages
 
 * grunt-cli (not in package.json, install [globally](http://gruntjs.com/getting-started) with `npm install -g grunt-cli`)
-* grunt 
+* grunt
 * grunt-browser-sync
 * grunt-contrib-concat
 * grunt-contrib-uglify
@@ -23,15 +23,13 @@ Ein Tutorial-Serie kommt in Kürze. Nur deutscher Sprache auf Vimeo und YouTube.
 
 
 ### Install
-It's preferred to have grunt command line tools installed globally, see above for information on this. 
+It's preferred to have grunt command line tools installed globally, see above for information on this.
 
-Clone this repo with `git clone https://bitbucket.org/secondnetwork/grunt-starter-kit.git` 
-
-and run `sudo npm install` in the directory. 
+and run `sudo npm install` in the directory.
 
 
 #### Grunt
 
-See the `gruntfile.js` file for more information on standard grunt tasks. 
+See the `gruntfile.js` file for more information on standard grunt tasks.
 
 Run `grunt` via terminal to run all tasks.
