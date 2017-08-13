@@ -1,80 +1,76 @@
 var request = require('request');
 
 module.exports = function(grunt) {
-    
-    grunt.loadNpmTasks('grunt-browser-sync');
-    grunt.loadNpmTasks('grunt-contrib-concat');
-    grunt.loadNpmTasks('grunt-contrib-uglify');
-	grunt.loadNpmTasks('grunt-contrib-sass');
-	grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.loadNpmTasks('grunt-imageoptim');
-	
+
     // show elapsed time at the end
     require('time-grunt')(grunt);
     // load all grunt tasks
     require('load-grunt-tasks')(grunt);
-    
-	grunt.initConfig({
-		pkg: grunt.file.readJSON('package.json'),
+
+    grunt.initConfig({
+
+        pkg: grunt.file.readJSON('package.json'),
+
         browserSync: {
             bsFiles: {
-                src : ['./build/*.html','./build/css/**/*.css']
+                src: ['./resources/build/*.html', './resources/build/css/**/*.css', './resources/build/js/**/*.js']
             },
             options: {
                 watchTask: true,
                 server: {
-                    baseDir: "./build"
+                    baseDir: "./resources/build"
                 }
             }
         },
-        
+
+
         concat: {
-			js: {
-				src: ['assets/js/jquery-1.10.2.js', 'assets/js/plugins/*.js', 'assets/js/main.js'],
-                dest: 'build/js/scripts.js',
-			}
-		},
-        uglify: {
-			js: {
-				src: ['build/js/scripts.js'],
-                dest: 'build/js/scripts.min.js',
-			}
-		},
-        sass: {         
-            dist: {
-                 options: {            
-                  style: 'compressed'// Can be nested, compact, compressed, expanded.
-                },
-                files: [
-                  {
-                      expand: true, // Recursive Output style. 
-                      cwd: "assets/sass/", // The startup directory
-                      src: ["**/*.scss"], // Source files
-                      dest: "build/css/", // Destination
-                      ext: ".css" // File extension 
-                  }
-                ]
+            js: {
+                src: ['resources/assets/js/plugins/*.js', 'resources/assets/js/main.js'],
+                dest: 'resources/build/js/scripts.js',
+            },
+            css: {
+                src: ['resources/assets/css/**/*.css'],
+                dest: 'resources/build/css/style.css',
             }
         },
-        imageoptim: {
-              myTask: {
-                  src: ['assets/images', 'build/images']
-              }
-        },
-		watch: {
-            js: {files: ['assets/js/**/*.js'],
-                tasks: ['concat','uglify']
-            },
-			css: {
-				files: 'assets/sass/**/*.{scss,sass}',
-				tasks: ['sass']
-			},
 
-            
-		}
-	});
-    // Optimize images.
-    grunt.registerTask('img', ['imageoptim']);
-    
-    grunt.registerTask('default',['concat','uglify','browserSync', 'watch']);
+        uglify: {
+            js: {
+                src: ['resources/build/js/scripts.js'],
+                dest: 'resources/build/script.min.js',
+
+            }
+        },
+
+        sass: {
+            dist: {
+                options: {
+                    style: 'compact' // Can be nested, compact, compressed, expanded.
+                },
+                files: [{
+                    expand: true, // Recursive Output style.
+                    cwd: "resources/assets/sass/", // The startup directory
+                    src: ["**/*.scss"], // Source files
+                    dest: "resources/build/css/", // Destination
+                    ext: ".css" // File extension
+                }]
+            }
+        },
+
+        watch: {
+
+            js: {
+                files: ['resources/assets/js/**/*.js'],
+                tasks: ['concat', 'uglify']
+            },
+            sass: {
+                files: 'resources/assets/sass/**/*.{scss,sass}',
+                tasks: ['sass']
+            },
+
+        }
+    });
+    //grunt.registerTask('watch', ['concat', 'uglify', 'watch']);
+    grunt.registerTask('default', ['sass', 'browserSync', 'watch']);
 }

@@ -1,14 +1,24 @@
-# grunt-starter-kit #
-A tutorial series ist coming soon. Only German language on Vimeo and YouTube.
+[![grunt banner](/doc/img/github_top.png?raw=true)](https://www.youtube.com/SecondnetworkDe)
+
+# grunt-starter-kit
 
 **[German/Deutsch]**
 
-Ein Tutorial-Serie kommt in Kürze. Nur deutscher Sprache auf Vimeo und YouTube.
+Tutorial-Serie auf YouTube.
+
+[YouTube Playlist](https://www.youtube.com/playlist?list=PL6rTABPbOJUmqmGuDVJBmBPq2rilgmRSY)
+[YouTube Cannel](https://www.youtube.com/SecondnetworkDe)
+
+**[English/Englisch]**
+
+A tutorial series. Only in German language on YouTube.
+
+[YouTube Playlist](https://www.youtube.com/playlist?list=PL6rTABPbOJUmqmGuDVJBmBPq2rilgmRSY)
+[YouTube Cannel](https://www.youtube.com/SecondnetworkDe)
 
 **GRUNT + SASS + BrowserSync + bootstrap**
 
-* 0.0.2 Version
-
+* 1.0.0 Version
 
 #### Node NPM Packages
 
@@ -16,10 +26,12 @@ Ein Tutorial-Serie kommt in Kürze. Nur deutscher Sprache auf Vimeo und YouTube.
 * grunt
 * grunt-browser-sync
 * grunt-contrib-concat
-* grunt-contrib-uglify
 * grunt-contrib-sass
+* grunt-contrib-uglify
 * grunt-contrib-watch
-* grunt-imageoptim
+* load-grunt-tasks
+* request
+* time-grunt
 
 
 ### Install
@@ -33,3 +45,10 @@ and run `sudo npm install` in the directory.
 See the `gruntfile.js` file for more information on standard grunt tasks.
 
 Run `grunt` via terminal to run all tasks.
+
+
+## Copyright and License
+
+Copyright by [secondnetwork](https://secondnetwork.de/) under the [MIT license](LICENSE.md).
+
+[Twitter](https://twitter.com/secondnetwork) [dribbble](https://dribbble.com/secondnetwork)
