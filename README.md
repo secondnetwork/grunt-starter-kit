@@ -46,6 +46,11 @@ See the `gruntfile.js` file for more information on standard grunt tasks.
 
 Run `grunt` via terminal to run all tasks.
 
+#### Important: Update Sass
+
+Compiler doesn't like Bootstrap 4 **Error in root.scss**.
+
+Update Sass to v3.5 on mac `sudo gem install sass`
 
 ## Copyright and License
 
