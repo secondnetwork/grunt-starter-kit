@@ -18,6 +18,6 @@
     "grunt-contrib-watch": "^1.0.0",
     "load-grunt-tasks": "^5.1.0",
     "request": "^2.83.0",
-    "time-grunt": "^1.4.0"
+    "time-grunt": "^2.0.0"
   }
 }
