@@ -2,20 +2,6 @@
 
 # grunt-starter-kit
 
-**[German/Deutsch]**
-
-Tutorial-Serie auf YouTube.
-
-[YouTube Playlist](https://www.youtube.com/playlist?list=PL6rTABPbOJUmqmGuDVJBmBPq2rilgmRSY)
-[YouTube Cannel](https://www.youtube.com/SecondnetworkDe)
-
-**[English/Englisch]**
-
-A tutorial series. Only in German language on YouTube.
-
-[YouTube Playlist](https://www.youtube.com/playlist?list=PL6rTABPbOJUmqmGuDVJBmBPq2rilgmRSY)
-[YouTube Cannel](https://www.youtube.com/SecondnetworkDe)
-
 **GRUNT + SASS + BrowserSync + bootstrap**
 
 * 1.0.0 Version
@@ -46,14 +32,11 @@ See the `gruntfile.js` file for more information on standard grunt tasks.
 
 Run `grunt` via terminal to run all tasks.
 
-#### Important: Update Sass
-
-Compiler doesn't like Bootstrap 4 **Error in root.scss**.
-
-Update Sass to v3.5 on mac `sudo gem install sass`
 
 ## Copyright and License
 
 Copyright by [secondnetwork](https://secondnetwork.de/) under the [MIT license](LICENSE.md).
 
-[Twitter](https://twitter.com/secondnetwork) [dribbble](https://dribbble.com/secondnetwork)
+[YouTube Cannel](https://www.youtube.com/SecondnetworkDe)
+[Twitter](https://twitter.com/secondnetwork) 
+[dribbble](https://dribbble.com/secondnetwork)
