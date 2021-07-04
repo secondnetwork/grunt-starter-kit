@@ -4,8 +4,6 @@
 
 **GRUNT + SASS + BrowserSync + bootstrap**
 
-* 1.0.0 Version
-
 #### Node NPM Packages
 
 * grunt-cli (not in package.json, install [globally](http://gruntjs.com/getting-started) with `npm install -g grunt-cli`)
